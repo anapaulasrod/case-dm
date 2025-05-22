@@ -15,4 +15,4 @@ Pré-requisitos de ambiente:
 Pré-requisitos para execução do caso de teste:
 - Realizar o download do código-fonte;
 - Acessar o código via Visual Studio Code;
-- Executar o código do arquivo ou executar realizando o debbuging.
+- Executar o código do arquivo ou executar realizando o debugging.
