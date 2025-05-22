@@ -16,3 +16,12 @@ Pré-requisitos para execução do caso de teste:
 - Realizar o download do código-fonte;
 - Acessar o código via Visual Studio Code;
 - Executar o código do arquivo ou executar realizando o debugging.
+
+Justificativa das escolhas feitas na implementação do teste automatizado:
+
+- Para a resolução do caso foi indicado o uso do Robot Framework/Selenium. A escolha foi ideal, pois o Selenium é uma biblioteca popular e robusta e permite simular as ações de um usuário utilizando o sistema.
+- Foi utilizada a linguagem de programação Python, pois o Framework possui a linguagem como nativa, portanto achei melhor utilizá-la.
+- Foram separados os dados e as constantes, pois facilita na manutenção e reaproveitamento do código.
+- Há usos de funções auxiliares para acessar os dropdowns, pois facilita na manutenção do código.
+- Foram utilizadas as configurações personalizadas de navegador, pois com essa função podemos evitar a presença de pop-ups, preenchimento automático, etc que podem atrapalhar a experiência na realização da automação.
+- Utilizei a verificação de sucesso para garantir que o fluxo foi executado até o fim, podendo reutilizar a mesma automação para realizarmos Testes de regressão.
