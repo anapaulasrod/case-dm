@@ -24,20 +24,21 @@ checkout_data = {
     "email": "ana.paula@email.com"
 }
 
-## Função utlizada para o dropdown de país ##
+## Função utilizada para o dropdown de país ##
 def select_country(driver, wait, country):
     driver.find_element(By.CLASS_NAME, "select2-selection--single").click()
     search_input = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "select2-search__field")))
     search_input.send_keys(country)
     search_input.send_keys(Keys.RETURN)
 
-## Função utlizada para o dropdown de estado ##
+## Função utilizada para o dropdown de estado ##
 def select_state(driver, wait, state):
     driver.find_element(By.ID, "select2-billing_state-container").click()
     search_input = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "select2-search__field")))
     search_input.send_keys(state)
     search_input.send_keys(Keys.RETURN)
 
+## Configurações de perfil do Google Chrome ##
 def main():
     chrome_options = Options()
     temp_profile = tempfile.mkdtemp()
@@ -102,7 +103,7 @@ def main():
         print("Thank you. Your order has been received.")
 
     except Exception as e:
-        print(f"Erro durante a automação: {e}")
+        print("Erro durante a automação: {e}")
 
     finally:
         time.sleep(5)
