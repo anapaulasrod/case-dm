@@ -24,4 +24,4 @@ Justificativa das escolhas feitas na implementação do teste automatizado:
 - Foram separados os dados e as constantes, pois facilita na manutenção e reaproveitamento do código.
 - Há usos de funções auxiliares para acessar os dropdowns, pois facilita na manutenção do código.
 - Foram utilizadas as configurações personalizadas de navegador, pois com essa função podemos evitar a presença de pop-ups, preenchimento automático, etc que podem atrapalhar a experiência na realização da automação.
-- Utilizei a verificação de sucesso para garantir que o fluxo foi executado até o fim, podendo reutilizar a mesma automação para realizarmos Testes de regressão.
+- Utilizei a verificação de sucesso para garantir que o fluxo foi executado até o fim, podendo reutilizar a mesma automação para realizarmos Testes de Regressão.
